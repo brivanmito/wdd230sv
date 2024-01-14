@@ -1,0 +1,86 @@
+/* Reset de estilos para eliminar márgenes y padding predeterminados en todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #f8f8f8;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #24ff10;
+    color: #444444;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+}
+
+h1 {
+    font-size: 24px;
+    padding-left: 30px;
+}
+
+nav {
+    background-color: #444444;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #24ff10;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilo para los enlaces en el pie de página */
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
