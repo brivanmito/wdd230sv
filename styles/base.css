@@ -67,6 +67,8 @@ main {
 h2 {
     font-size: 28px;
     margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 1px solid #363636;
 }
 
 ul {
