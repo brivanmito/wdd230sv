@@ -14,5 +14,5 @@ document.addEventListener('DOMContentLoaded', function() {
     let formattedDate = lastModified.toLocaleString();
 
     // Update the element's content with the formatted date
-    lastModifiedElement.textContent = 'Last Modified: ' + formattedDate;
+    lastModifiedElement.textContent = 'Last Modified: ' + formattedDate + ' | Bryan Miño';
 });

@@ -6,6 +6,7 @@
     padding: 0;
   }
 body {
+  font-weight: bold;
   font-family: 'Montserrat', 'Bradley Hand', sans-serif;
   line-height: 1.6;
   color: #333333;
@@ -70,4 +71,9 @@ main {
 
 p {
   padding: 10px;
+}
+
+footer p {
+  text-align: center;
+  font-weight: bold;
 }
