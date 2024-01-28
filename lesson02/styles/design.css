@@ -63,3 +63,11 @@
     padding: .5rem 0;
     font-size: smaller;
   }
+
+  @media screen and (min-width: 640px) {
+    h1 {
+      font-size: 2.5rem;
+      margin: 1rem;
+      color: navy;
+    }
+  }
