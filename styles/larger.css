@@ -19,4 +19,12 @@
   #menu {
     display: none;
   }
+  iframe {
+    display: flex;
+    width: 56%;
+    height: 450px;
+    padding-bottom: 3rem;
+    display: flex;
+    margin: 0 auto;
+  }
 }
