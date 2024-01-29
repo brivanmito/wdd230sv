@@ -1,25 +1,22 @@
-@media screen and (min-width: 1000px){
-	nav  {
-		display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-	}
-    nav a {
-    display: block;
-    }
-    main  {
-        display: grid;
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr 1fr;
-
-    }
-    h2 {
-        grid-column: 1/4;
-        grid-row: 1/2;
-    }
-    .card {
-        
-        justify-items: center;
-    }
-
+@media (min-width: 37.5em) {
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  main {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  h2 {
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+  .card {
+    justify-items: center;
+  }
+  #menu {
+    display: none;
+  }
 }
