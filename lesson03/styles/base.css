@@ -71,7 +71,6 @@ header > h2 {
 p {
   font-family: var(--paragraph-font);
   color: var(--paragraph-color-on-white);
-  padding: 1em;
 }
 .colors {
   width: 100%;
@@ -186,4 +185,17 @@ img {
 }
 #logo {
   background-color: var(--primary-color);
+}
+
+p ~ h4 {
+  font-weight: bold;
+}
+p ~ p {
+  text-align: justify;
+}
+#titlep {
+  text-align: center;
+}
+main > p {
+    text-align: center;
 }
