@@ -140,6 +140,17 @@ iframe {
   display: flex;
   margin: 0 auto;
 }
+a {
+  text-decoration: none;
+}
+li a:active,
+li a:link,
+li a:visited {
+  color: navy;
+}
+li a:hover {
+  color: red;
+}
 
 
 
