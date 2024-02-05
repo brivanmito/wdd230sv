@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@300&display=swap");
 
 :root {
     --primary-color: #003566;
@@ -29,12 +29,15 @@
 body {
     margin: 0 auto;
     font-family: var(--paragraph-font);
-    font-size: 20px;
+    font-size: 18px;
 }
 
 header {
     background-color: var(--primary-color);
     display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 #logo {
@@ -45,5 +48,33 @@ nav {
 }
 
 nav a {
+    padding: 30px;
+    color: var(--nav-link-color);
+    align-items: center;
+    font-family: var(--heading-font);
+}
+
+nav a:hover {
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+}
+#hero-box img {
+    width: 100%;
+
+}
+#hero-box {
+    position: relative;
+}
+.button-box {
+    position: absolute;
+    top: 14rem;
+    left: 2rem;
+    width: auto;
+    height: auto;
+    background-color: var(--primary-color);
     padding: 20px;
+    border-radius: 20px;
+}
+.button-box a {
+    color: white;
 }
