@@ -78,3 +78,17 @@ nav a:hover {
 .button-box a {
     color: white;
 }
+
+#home-grid {
+    width: 100%;
+    display: flex;
+    justify-items: center;
+}
+.benefits {
+    text-align: center;
+    font-size: 1rem;
+}
+.benefits img{
+    width: 40%;
+    border-radius: 50%;
+}
