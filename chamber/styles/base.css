@@ -72,6 +72,7 @@ nav a:hover {
   background-color: var(--primary-color);
   padding: 20px;
   border-radius: 20px;
+  text-align: center;
 }
 .button-box a {
   color: white;
@@ -79,8 +80,7 @@ nav a:hover {
 
 #home-grid {
   width: 100%;
-  display: flex;
-  justify-items: center;
+  display: block;
 }
 .benefits {
   text-align: center;
@@ -93,7 +93,7 @@ nav a:hover {
   padding: 10px;
 }
 .benefits img {
-  width: 40%;
+  width: 30%;
   border-radius: 50%;
 }
 
@@ -106,9 +106,51 @@ h2 {
   text-align: center;
 }
 .grid-descriptive img {
-  width: 50%;
+  width: 90%;
   display: inline-block;
   justify-content: center;
   padding: 40px;
-  border-radius: 8%;
+  border-radius: 13%;
+}
+
+
+
+/*small view navigation */
+#menu {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+
+
+#menu::before {
+  content: "☰";
+  padding: 20px 10px;
+}
+
+#menu.open::before {
+  content: "x";
+  padding: 20px 10px;
+}
+
+.navigation a {
+  display: block;
+}
+
+.navigation {
+  display: none;
+} 
+
+nav a:hover {
+  color: #ddd;
+  font-weight: bolder;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open{
+  display: block;
+}
+.open::before {
+  content:"📍";
 }
