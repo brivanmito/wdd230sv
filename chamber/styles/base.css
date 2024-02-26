@@ -51,6 +51,7 @@ nav a {
   color: var(--nav-link-color);
   align-items: center;
   font-family: var(--heading-font);
+  text-decoration: none;
 }
 
 nav a:hover {
@@ -76,6 +77,7 @@ nav a:hover {
 }
 .button-box a {
   color: white;
+  text-decoration: none;
 }
 
 #home-grid {
