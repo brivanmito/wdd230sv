@@ -2,8 +2,9 @@
     .navigation {
       display: flex;
       flex-direction: row;
-      justify-content: space-evenly;
+      justify-content: center;
     }
+   
     #home-grid {
         width: 100%;
         display: flex;
@@ -15,6 +16,25 @@
     }
     .grid-descriptive img {
         width: 60%;
+    }
+    
+    #hero-box {
+    position: relative;
+    }
+    .button-box {
+    position: absolute;
+    top: 14rem;
+    left: 2rem;
+    width: auto;
+    height: auto;
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    }
+    .button-box a {
+    color: white;
+    text-decoration: none;
     }
 
 

@@ -34,13 +34,13 @@ body {
 
 header {
   background-color: var(--primary-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 }
+
 
 #logo {
   width: 70px;
+
 }
 nav {
   display: flex;
@@ -52,6 +52,7 @@ nav a {
   align-items: center;
   font-family: var(--heading-font);
   text-decoration: none;
+  text-align: center;
 }
 
 nav a:hover {
@@ -61,15 +62,8 @@ nav a:hover {
 #hero-box img {
   width: 100%;
 }
-#hero-box {
-  position: relative;
-}
+
 .button-box {
-  position: absolute;
-  top: 14rem;
-  left: 2rem;
-  width: auto;
-  height: auto;
   background-color: var(--primary-color);
   padding: 20px;
   border-radius: 20px;
