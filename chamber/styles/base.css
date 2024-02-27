@@ -37,10 +37,8 @@ header {
   text-align: center;
 }
 
-
 #logo {
   width: 70px;
-
 }
 nav {
   display: flex;
@@ -96,6 +94,7 @@ nav a:hover {
 h2 {
   text-align: center;
   color: var(--primary-color);
+  padding: 15px;
 }
 #images-explanation {
   width: 100%;
@@ -109,16 +108,12 @@ h2 {
   border-radius: 13%;
 }
 
-
-
 /*small view navigation */
 #menu {
   position: absolute;
   top: 1rem;
   right: 1rem;
 }
-
-
 
 #menu::before {
   content: "☰";
@@ -136,7 +131,7 @@ h2 {
 
 .navigation {
   display: none;
-} 
+}
 
 nav a:hover {
   color: #ddd;
@@ -144,9 +139,22 @@ nav a:hover {
 }
 
 /* when the button is clicked - the open class is toggled (added/removed) */
-.open{
+.open {
   display: block;
 }
 .open::before {
-  content:"📍";
+  content: "📍";
+}
+
+
+
+
+/* toggle */
+#mode {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+	font-size: 2rem;
 }
