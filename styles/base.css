@@ -151,6 +151,11 @@ li a:visited {
 li a:hover {
   color: red;
 }
+.hero img{
+  padding: 0;
+  width: 100%;
+  height: auto;
+}
 
 
 
