@@ -69,7 +69,7 @@ h1 {
 
 .navigation {
   display: none;
-} 
+}
 
 nav a:hover {
   color: #ddd;
@@ -77,11 +77,11 @@ nav a:hover {
 }
 
 /* when the button is clicked - the open class is toggled (added/removed) */
-.open{
+.open {
   display: block;
 }
 .open::before {
-  content:"📍";
+  content: "📍";
 }
 
 main {
@@ -151,11 +151,29 @@ li a:visited {
 li a:hover {
   color: red;
 }
-.hero img{
+.hero img {
   padding: 0;
   width: 100%;
   height: auto;
+  object-fit: cover;
+}
+.hero {
+  position: relative;
+}
+.heroLabel {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  background: radial-gradient(#fff, #3c86e6);
+  border: 1px solid rgba(0, 0, 0, 0.75);
+  padding: 1.5rem;
+  box-shadow: 0 0 3rem #fff;
+  opacity: 0.75;
 }
 
-
-
+.heroLabel p {
+  margin: 0;
+  padding: 0.25rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
