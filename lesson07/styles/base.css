@@ -1,0 +1,48 @@
+* {
+    margin: 0 auto;
+}
+h1 {
+    text-align: center;
+    padding: 15px;
+}
+
+main {
+    margin: 0 auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 100%;
+    background-color: black;
+    animation: fade 15s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: #24ff10;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  /* Estilo para los enlaces en nel pie de página*/
+  footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  footer img {
+    width: 5%;
+    background-color: transparent;
+    padding: 10px;
+  }
