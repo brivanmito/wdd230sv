@@ -16,3 +16,19 @@ document.addEventListener('DOMContentLoaded', function() {
     // Update the element's content with the formatted date
     lastModifiedElement.textContent = 'Last Modified: ' + formattedDate;
 });
+
+
+
+const resize = () => {
+    let textLabe = document.querySelector(".heroLabel > p");
+    if(innerWidth >= 0 && innerWidth <= 400) {
+        textLabe.innerText = "Small View";
+    } else if (innerWidth >= 400 && innerWidth <= 960) {
+        textLabe.innerText = "Medium view";
+    } else {
+        textLabe.innerText = "Large view";
+    }
+}
+
+addEventListener('resize', resize);
+addEventListener('DOMContentLoaded', resize);
