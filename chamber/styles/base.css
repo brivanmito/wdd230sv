@@ -24,6 +24,7 @@
   box-sizing: border-box;
   max-width: 1660px;
   padding: 0;
+  margin: 0 auto;
 }
 
 body {
@@ -157,4 +158,45 @@ nav a:hover {
 	font-size: 3rem;
 	cursor: pointer;
 	font-size: 2rem;
+}
+
+#hero-2 img {
+  padding: 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+#hero-2 {
+  position: relative;
+}
+.heroLabel {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  background: radial-gradient(#fff, #3c86e6);
+  border: 1px solid rgba(0, 0, 0, 0.75);
+  padding: 1.5rem;
+  box-shadow: 0 0 3rem #fff;
+  opacity: 0.75;
+}
+
+.heroLabel p {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+#iconWeather {
+  width: 80px;
+}
+
+#weather {
+  padding: 10px;
+  text-align: center;
+  background-color: #989ea0;
+  width: 25%;
+  padding: 20px;
+  line-height: 2rem;
+  box-shadow: 0 0 3rem #fff;
 }

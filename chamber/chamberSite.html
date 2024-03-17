@@ -39,12 +39,29 @@
         <div id="mode">
             🕶️
         </div>
-        <div id="hero-box">
+        <!-- <div id="hero-box">
             <img id="hero-img" src="images/heroImageManta.jpg" alt="Manta Beach">
             <div class="button-box">
                 <a class="book" href="" target="_blank">Enjoy the Chamber</a>
             </div>
+        </div> -->
+
+        <div id="hero-2">
+            <picture>
+                <source media="(max-width: 400px)" srcset="images\week06_small.webp">
+                <source media="(max-width: 960px)" srcset="images\week06_medium.webp">
+                <img src="images\week06_large.webp" alt="Temple principal image" width="1500" height="750">
+            </picture>
+            <div class="heroLabel">
+                <p>Concepcion Chile Temple</p>
+            </div>
         </div>
+    </div>
+    <div id="weather">
+        <img id="iconWeather" src="images/logo.png" alt="">
+        <p id="description"></p>
+        <p id="temperature">Temperature</p>
+        <p id="windChill">Windchill</p>
     </div>
     <main>
         <h2>Activities</h2>
@@ -83,6 +100,7 @@
     </footer>
     <script src="scripts/hamburguerMenu.js"></script>
     <script src="scripts/darkMode.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 
 </html>
