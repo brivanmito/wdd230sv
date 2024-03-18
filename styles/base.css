@@ -177,3 +177,10 @@ li a:hover {
   font-weight: 700;
   font-size: 1.2rem;
 }
+
+#iconWeather {
+  width: 80px;
+  text-align: center;
+  display: flex;
+  margin: 0 auto;
+}

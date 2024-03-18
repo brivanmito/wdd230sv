@@ -15,8 +15,8 @@ main {
 
 img {
     width: 100%;
-    background-color: black;
     animation: fade 15s;
+    padding: 10px;
 }
 
 @keyframes fade {

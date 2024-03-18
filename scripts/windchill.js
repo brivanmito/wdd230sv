@@ -8,6 +8,8 @@ const apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=
 let temperature = document.getElementById("temperature");
 let windChill = document.getElementById("windChill");  
 
+let iconWeather = document.getElementById("iconWeather");
+
 async function getWeather() {
   const response = await fetch(apiURL);
   const weatherData = await response.json();
@@ -16,6 +18,9 @@ async function getWeather() {
   const tempFaren = (temp * (9/5)) + 32;
   temperature.innerHTML = "Temperature: " + Math.round(tempFaren) + "°F";
   getwinchill(tempFaren, windspeed);
+  const iconCode = weatherData.weather[0].icon;
+  const iconUrl = `http://openweathermap.org/img/w/${iconCode}.png`;
+  iconWeather.setAttribute("src", iconUrl);
 
 }
 
