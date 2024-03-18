@@ -23,10 +23,12 @@
 * {
   box-sizing: border-box;
   max-width: 2000px;
+  padding: 0;
   margin: 0 auto;
 }
 
 body {
+  margin: 0 auto;
   font-family: var(--paragraph-font);
   font-size: 18px;
 }
@@ -90,7 +92,9 @@ nav a:hover {
   border-radius: 50%;
   padding: 20px;
 }
-
+main {
+  padding-top: 40px;
+}
 h2 {
   text-align: center;
   color: var(--primary-color);
@@ -209,10 +213,11 @@ nav a:hover {
   padding-bottom: 50px;
 }
 
-main {
+#discover-page {
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-template-rows: 1fr;
+  padding-top: 0px;
 
 
 }
