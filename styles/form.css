@@ -1,5 +1,5 @@
 :root {
-    --main-color: rgb(229, 84, 44);
+    --main-color: #003566;
     --border-color: rgb(103, 101, 101);
     --shadow-color: rgba(0, 0, 0, 0.2);
     --max-width: 300px; /* Define max-width as a CSS variable */
@@ -12,7 +12,7 @@
 
 #rangevalue {
     font-size: 2rem;
-    color: navy;
+    color: #003566;
     margin-top: 1rem;
 }
 
@@ -43,7 +43,7 @@ input {
     display: block;
     border: 1.3px solid var(--border-color);
     max-width: var(--max-width); /* Use max-width CSS variable */
-    width: 50%;
+    width: 100%;
     padding: .8rem;
 }
 
@@ -72,4 +72,8 @@ input[type="submit"] {
 
 input[type="submit"]:active {
     transform: translateY(2px);
+}
+
+form {
+    width: 100%;
 }

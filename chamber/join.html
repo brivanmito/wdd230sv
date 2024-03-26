@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manta Chamber of Commerce</title>
+    <meta name="description"
+        content="This coursework portal corresponds to the course WDD230 - Web Development of the student BRYAN MIÑO TOALA.">
+    <meta name="author" content="Bryan Miño">
+    <link rel="stylesheet" href="../styles/form.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="icon" href="images/favicon.ico">
+    <meta property="og:title" content="Manta Chamber of Commerce">
+    <meta property="og:description"
+        content="This coursework portal corresponds to the course WDD230 - Web Development of the student BRYAN MIÑO TOALA.">
+    <meta property="og:type" content="article">
+    <meta property="og:image"
+        content="https://www.aldia.com.ec/wp-content/uploads/2020/10/120260486_357351072284481_4075491110549822096_n.jpg">
+    <meta property="og:url" content="https://brivanmito.github.io/wdd230sv/">
+</head>
+
+<body>
+    <header>
+        <a href="chamberSite.html">
+            <img id="logo" src="images/logo.png" alt="Logo Chamber">
+        </a>
+        <button id="menu"></button>
+        <nav class="navigation">
+            <a href="chamberSite.html">Home</a>
+            <a href="">Discover</a>
+            <a href="">Directory</a>
+            <a href="">Join</a>
+        </nav>
+    </header>
+    <main id="join-page">
+        <form action="record.html" method="get">
+            <fieldset>
+                <label>Username <input type="text" id="fname" name="fname" required ></label>
+                <label>Password <input type="password" id="password" name="password" 
+                    pattern="^(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z\d]{8,}$" 
+                    title="Password must be at least 8 characters long and contain only alphanumeric characters" 
+                    required></label>
+                <label>Confirm Password <input type="password" name="confirm-password" id="confirmPassword" required></label>
+                <label id="passwordMatch"></label>
+                <label>E-mail <input title="Please enter a valid email address" type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"></label>
+                <label>Page Rating</label>
+                <div id="rangevalue">0</div> 
+                <input type="range" id="range" name="range" min="0" max="10" value="0" step="1" list="rangevalues">
+                <datalist id="rangevalues">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>                     
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+                
+
+                <input type="submit" id="submit-button" value="Submit Form">
+
+            </fieldset>
+        </form>
+        <div class="levels">
+            <h1>Choose the membership you like</h1>
+            <div>
+                <div>
+                    <h2>NP Membership</h2>
+                    <p>For non-profit organizations</p>
+                </div>
+                <div>
+                    <p>✅Price: Free</p>
+                    <p>✅Benefits:</p>
+                    <p>✅No membership fee</p>
+                </div>
+            </div>
+            
+            <div>
+                <div>
+                    <h2>Bronze Membership</h2>
+                </div>
+                <div>
+                    <p>✅Price: $50/month</p>
+                    <p>✅Benefits:</p>
+                    <p>✅Special events access</p>
+                    <p>✅Basic training resources</p>
+                </div>
+            </div>
+            
+            <div>
+                <div>
+                    <h2>Silver Membership</h2>
+                </div>
+                <div>
+                    <p>✅Price: $100/month</p>
+                    <p>✅Benefits:</p>
+                    <p>✅Spotlight position on the home page</p>
+                    <p>✅Event discounts</p>
+                </div>
+            </div>
+            
+            <div>
+                <div>
+                    <h2>Gold Membership</h2>
+                </div>
+                <div>
+                    <p>✅Price: $200/month</p>
+                    <p>✅Benefits:</p>
+                    <p>✅All Silver Membership benefits</p>
+                    <p>✅Premium advertising</p>
+                    <p>✅Advanced training resources</p>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="scripts/hamburguerMenu.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/localStorage.js"></script>
+    <script src="../scripts/form.js"></script>
+</body>
+
+</html>
