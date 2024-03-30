@@ -37,3 +37,7 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
 }
+
+img:hover {
+    box-shadow: 0 0 30px #777;
+}
