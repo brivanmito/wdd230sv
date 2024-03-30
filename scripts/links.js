@@ -15,15 +15,19 @@ const displayLinks = (weeks) => {
 
         listItem.textContent = `${week.lesson}: `;
 
-        week.links.forEach((link) => {
+        week.links.forEach((link, index) => {
             let linkE = document.createElement('a');
 
             linkE.setAttribute('href', link.url);
             linkE.setAttribute('target', '_blank');
             linkE.textContent = link.title;
+            listItem.appendChild(linkE);
 
+            if(index < week.links.length -1) {
+                listItem.innerHTML += ' | ';
+            }
         });
-        listActivity.appendChild(linkE);
+        listActivity.appendChild(listItem);
 
     });
 };
