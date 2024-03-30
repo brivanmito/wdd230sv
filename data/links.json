@@ -1,0 +1,114 @@
+{
+    "lessons": [
+        {
+            "lesson": "01",
+            "links": [
+                {
+                    "url": "lesson01/holygrail.html",
+                    "title": "Holy Layout"
+                }
+            ]
+        },
+        {
+            "lesson": "02",
+            "links": [
+                {
+                    "url": "lesson02/design.html",
+                    "title": "Design Activity"
+                },
+                {
+                    "url": "lesson02/media-query.html",
+                    "title": "Media Query Activity"
+                },
+                {
+                    "url": "lesson02/design-principles.html",
+                    "title": "Design principles Activity"
+                }
+            ]
+        },
+        {
+            "lesson": "03",
+            "links": [
+                {
+                    "url": "images/cssCombinators.png",
+                    "title": "Css Combinators Activity"
+                },
+                {
+                    "url": "https://codepen.io/Bryan-Mi-o/pen/qBvprXQ",
+                    "title": "CSS Pseudo Eleemnts Activity"
+                },
+                {
+                    "url": "https://codepen.io/Bryan-Mi-o/pen/MWxrpXQ",
+                    "title": "Hamburguer Menu Activity"
+                }
+            ]
+        },
+        {
+            "lesson": "04",
+            "links": [
+                {
+                    "url": "https://codepen.io/Bryan-Mi-o/pen/LYamgQM",
+                    "title": "CSS Pseudo Classes Activity"
+                }
+            ]
+        },
+        {
+            "lesson": "05",
+            "links": [
+                {
+                    "url": "lesson05/bom.html",
+                    "title": "Book of Mormon Favorite Chapters"
+                }
+            ]
+        },
+        {
+            "lesson": "06",
+            "links": [
+                {
+                    "url": "lesson06/images/landscape.webp",
+                    "title": "WebP"
+                },
+                {
+                    "url": "lesson06/responsive-images.html",
+                    "title": "Responsive image"
+                }
+            ]
+        },
+        {
+            "lesson": "07",
+            "links": [
+                {
+                    "url": "lesson07/lazyload.html",
+                    "title": "Lazy Load Examples"
+                }
+            ]
+        },
+        {
+            "lesson": "08",
+            "links": [
+                {
+                    "url": "lesson08/tablebuild.html",
+                    "title": "HTML Table Build"
+                },
+                {
+                    "url": "form.html",
+                    "title": "Form Build"
+                }
+            ]
+        },
+        {
+            "lesson": "09",
+            "links": [
+                {
+                    "url": "lesson09/prophets.html",
+                    "title": "The Fetch API"
+                },
+                {
+                    "url": "lesson09/members.json",
+                    "title": "JSON Data"
+                }
+            ]
+        }
+
+    ]
+}
