@@ -1,90 +1,62 @@
-// Last Modified
+const url = 'https://brivanmito.github.io/wdd230sv/chamber/data/members.json';
+const cards = document.querySelector('#cards');
 
-let lastModif = new Date(document.lastModified);
-let dateString = new Date(lastModif).toLocaleString();
-document.querySelector('#lastModified').textContent = `Last update on ${dateString}`;
+async function getCompanyData() {
+    const response = await fetch(url);
+    const data = await response.json();
+    displayCompanies(data.members);
+}
 
-// Hamburger menu
+const displayCompanies = (companies) => {
+    companies.forEach((company) => {
+        let card = document.createElement('span');
+        let name = document.createElement('h2');
+        let address = document.createElement('p');
+        let phone = document.createElement('p');
+        let website = document.createElement('a');
+        let image = document.createElement('img');
+        let membershipLevel = document.createElement('p');
+        
+        card.setAttribute('class', 'toggle')
+        name.textContent = company.name;
+        address.textContent = `Address: ${company.address}`;
+        phone.textContent = `Phone: ${company.phonenumber}`;
+        website.textContent = `Website: ${company.website}`;
+        website.setAttribute('href', company.website);
+        image.setAttribute('src', company.icon);
+        image.setAttribute('alt', `${company.name} Logo`);
+        image.setAttribute('loading', 'lazy');
+        image.setAttribute('width', '100');
+        image.setAttribute('height', '100');
+        membershipLevel.textContent = `Membership: ${company.membershiplevel}`;
+        
 
-const menuBtn = document.querySelector('#menu');
-const navigation = document.querySelector('.navigation');
+        card.appendChild(name);
+        card.appendChild(image);
+        card.appendChild(address);
+        card.appendChild(phone);
+        card.appendChild(website);
+        card.appendChild(membershipLevel);
+    
 
-menuBtn.addEventListener('click', () => {
-	navigation.classList.toggle('open');
-	menuBtn.classList.toggle('open');
-});
+        cards.appendChild(card);
+    });
+}
 
-
-// Display Directory Members
-
-const baseURL = "https://brivanmito.github.io/wdd230sv/";
-const membersURL = "https://brivanmito.github.io/wdd230sv/chamber/data/members.json";
+getCompanyData();
 
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
 const display = document.querySelector("article");
 
-async function getMembersData() {
-    const response = await fetch(membersURL);
-    const data = await response.json();
-    displayMembers(data);
-}
-
-const displayMembers = (members) => {
-    members.members.forEach((member) => {
-        let section = document.createElement('section');
-        let img = document.createElement('img');
-        let name = document.createElement('h4');
-        let address = document.createElement('p');
-        let url = document.createElement('p');
-        let membership = document.createElement('p');
-
-        img.src = member.image;
-        name.textContent = member.name;
-        address.textContent = member.address;
-        url.textContent = member.url;
-        membership.textContent = `Membership Type: ${member.membership}`;
-
-        section.appendChild(img);
-        section.appendChild(name);
-        section.appendChild(address);
-        section.appendChild(url);
-        section.appendChild(membership);
-
-        display.appendChild(section);
-    });
-}
-
-getMembersData();
-
-
 gridbutton.addEventListener("click", () => {
-    // example using arrow function
-    display.classList.add("grid");
-    display.classList.remove("list");
+	display.classList.add("grid");
+	display.classList.remove("list");
 });
 
-listbutton.addEventListener("click", showList); // example using defined function
+listbutton.addEventListener("click", showList); 
 
 function showList() {
-    display.classList.add("list");
-    display.classList.remove("grid");
+	display.classList.add("list");
+	display.classList.remove("grid");
 }
-
-
-//Dark Mode
-
-const switchInput = document.querySelector('#switch-input');
-const body = document.querySelector('body');
-const directoryMain = document.querySelector('.directory-main');
-
-switchInput.addEventListener('change', () => {
-    if (switchInput.checked) {
-        body.style.backgroundColor = 'black';
-        directoryMain.style.color = 'black';
-    } else {
-        body.style.backgroundColor = 'white';
-        directoryMain.style.color = 'black';
-    }
-});
-
