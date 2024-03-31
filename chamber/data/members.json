@@ -1,30 +1,67 @@
 {
-    "wardInformation": {
-        "familyName": "Rodriguez",
-        "moveInDate": "2001-01-30",
-        "numberOfPeople": 4,
-        "visitedBishopric": true,
-        "individualFamilyMembers": [
-            {
-                "name": "Mercy Rodriguez",
-                "gender": "Female",
-                "birthdate": "1967-07-12"
-            },
-            {
-                "name": "Jorge Rodriguez",
-                "gender": "Male",
-                "birthdate": "1993-09-30"
-            },
-            {
-                "name": "Pamela Rodriguez",
-                "gender": "Female",
-                "birthdate": "1996-07-07"
-            },
-            {
-                "name": "Jennifer Rodriguez",
-                "gender": "Female",
-                "birthdate": "1999-10-11"
-            }
-        ]
-    }
+    "members": [
+        {
+            "names": "Marcus Company",
+            "address": "Valerio Estacip 189st",
+            "phonenumber": "09811044578",
+            "website": "www.marcuscompany.com",
+            "icon": "https://cdn.dribbble.com/users/5369207/screenshots/15784687/media/c115bf34d98ad0cc4878a24c56ebe3ac.jpg",
+            "membershiplevel": "Senior"
+    
+        },
+        {
+            "names": "Vargas Corporation",
+            "address": "Jaime Roldos 89 y 67",
+            "phonenumber": "03939393933",
+            "website": "www.vargascopr.com",
+            "icon": "https://cdn.dribbble.com/userupload/10782598/file/original-cd7890c4b80f3da5be1c485b0ea15f5c.jpg?resize=752x",
+            "membershiplevel": "Jr."
+    
+        },
+        {
+            "names": "PayCorp",
+            "address": "Quito st 45 av N",
+            "phonenumber": "9487474849",
+            "website": "www.paycorp.com",
+            "icon": "https://cdn.dribbble.com/users/5039231/screenshots/12120080/media/8b918d5548a292a358491f7b8da336ef.png",
+            "membershiplevel": "Jr."
+    
+        },
+        {
+            "names": "LeniCopr",
+            "address": "Carlos 45 t",
+            "phonenumber": "8484884",
+            "website": "www.lenicopr.com",
+            "icon": "https://cdn.dribbble.com/users/5039231/screenshots/12104765/media/f0a1e0284d000da3a107be1822690b17.png",
+            "membershiplevel": "Sr"
+    
+        },
+        {
+            "names": "Three Suns",
+            "address": "Saint 56 yt",
+            "phonenumber": "444432553",
+            "website": "www.threesuns.com",
+            "icon": "https://cdn.dribbble.com/users/5039231/screenshots/12128122/media/a18e9326fa84627a19e02d0aa19bfae7.png",
+            "membershiplevel": "Major"
+    
+        },
+        {
+            "names": "Watch Moon",
+            "address": "August Av 54 y NF",
+            "phonenumber": "989948494",
+            "website": "www.watchmoon.com",
+            "icon": "https://cdn.dribbble.com/users/5039231/screenshots/12128122/media/a18e9326fa84627a19e02d0aa19bfae7.png",
+            "membershiplevel": "Major"
+    
+        },
+        {
+            "names": "Moon Corp",
+            "address": "Saint 56 av 21",
+            "phonenumber": "7373738383",
+            "website": "www.mooncopr.com",
+            "icon": "https://cdn.dribbble.com/users/5039231/screenshots/12128122/media/a18e9326fa84627a19e02d0aa19bfae7.png",
+            "membershiplevel": "Jr"
+    
+        }
+    ]
 }
