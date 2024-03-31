@@ -1,3 +1,192 @@
+/* Reset de estilos para eliminar márgenes y padding predeterminados en todos los elementos */
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Julius+Sans+One&family=Montserrat:ital,wght@0,100;0,200;0,300;1,100&family=Raleway:ital,wght@0,100;0,200;1,100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", "Bradley Hand", sans-serif;
+  line-height: 1.6;
+  color: #333333;
+  background-color: #f8f8f8;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  background-color: #24ff10;
+  color: #444444;
+}
+
+header img {
+  width: 150px;
+  height: 150px;
+}
+
+h1 {
+  font-size: 24px;
+  padding-left: 10px;
+}
+
+/*small view navigation */
+#menu {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.navigation {
+  background-color: #444444;
+  padding: 10px;
+  text-align: center;
+}
+
+#menu::before {
+  content: "☰";
+  padding: 20px 10px;
+}
+
+#menu.open::before {
+  content: "x";
+  padding: 20px 10px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #24ff10;
+  margin: 0 15px;
+  font-size: 16px;
+  padding: 10px;
+  display: block;
+}
+
+.navigation {
+  display: none;
+}
+
+nav a:hover {
+  color: #ddd;
+  font-weight: bolder;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open {
+  display: block;
+}
+.open::before {
+  content: "📍";
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+.card p {
+  text-align: center;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+  border-bottom: 1px solid #363636;
+}
+
+h3 {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+footer {
+  background-color: #333;
+  color: #24ff10;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+}
+
+/* Estilo para los enlaces en nel pie de página*/
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+img {
+  width: 50px;
+  padding: 10px;
+}
+
+iframe {
+  display: flex;
+  width: 93%;
+  height: 450px;
+  padding-bottom: 3rem;
+  display: flex;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+li a:active,
+li a:link,
+li a:visited {
+  color: navy;
+}
+li a:hover {
+  color: red;
+}
+.hero img {
+  padding: 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.hero {
+  position: relative;
+}
+.heroLabel {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  background: radial-gradient(#fff, #3c86e6);
+  border: 1px solid rgba(0, 0, 0, 0.75);
+  padding: 1.5rem;
+  box-shadow: 0 0 3rem #fff;
+  opacity: 0.75;
+}
+
+.heroLabel p {
+  margin: 0;
+  padding: 0.25rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+#iconWeather {
+  width: 80px;
+  text-align: center;
+  display: flex;
+  margin: 0 auto;
+}
+
+
+
 :root {
     --main-color: #003566;
     --border-color: rgb(103, 101, 101);
@@ -31,8 +220,9 @@ fieldset {
     padding-left: 3rem;
     font-size: 1rem;
     background-color: aliceblue;
-    max-width: 500px;
+    width: 60%;
 }
+
 
 #passwordMatch {
     color: red;
@@ -76,4 +266,7 @@ input[type="submit"]:active {
 
 form {
     width: 100%;
+}
+#form form {
+    justify-self: center;
 }
