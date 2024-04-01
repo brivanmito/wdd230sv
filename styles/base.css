@@ -184,5 +184,11 @@ li a:hover {
   display: flex;
   margin: 0 auto;
 }
+form {
+  width: 100%;
+}
+fieldset {
+  width: 100%;
+}
 
 
