@@ -1,4 +1,7 @@
 @media (max-width: 768px) {
+    body {
+        font-size: 0.9em;
+    }
     #menu {
         position:absolute;
         display: block;
@@ -8,7 +11,6 @@
         color: azure;
         border-color: transparent;
         background-color: transparent;
-        font-weight: 500;
     }
     .Header {
         display: block;
@@ -39,12 +41,12 @@
     #scooter-photo {
         width: 90%;
         display: block;
-        top: 300px;
+        top: 19rem;
         left: 5%;
         z-index: 0;
     }
     #message-hero {
-        top: 7rem;
+        top: 5rem;
         width: 80%;
         left: 10%;
     }
