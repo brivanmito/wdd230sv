@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+.Header img {
+    width: 80px;
+    padding: 13px;
+}
+.Header {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 5%;
+    position: fixed;
+    width: 100%;
+
+}
+#menu {
+    display: none;
+}
+.navigation {
+    padding: 10px 40px;
+}
+nav a {
+    padding: 10px 25px;
+    color: azure;
+}
+a:hover {
+    color: #fcd600;
+}
+nav a:last-child {
+    color: black;
+    background-color: #fcd600;
+    border-radius: 15rem;
+}
+picture img {
+    width: 100%;
+}
