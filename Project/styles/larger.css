@@ -27,10 +27,11 @@ body {
 .navigation {
     padding: 10px 40px;
 }
-nav a {
+.navigation a {
     padding: 10px 25px;
     color: azure;
     text-decoration: none;
+    padding: 15px;
 }
 a:hover {
     color: #fcd600;

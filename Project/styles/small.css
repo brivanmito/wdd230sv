@@ -15,11 +15,16 @@
     .Header {
         display: block;
         padding: 0;
+        object-fit: cover;
     }
     #menu::before {
         content: "☰";
         padding: 20px 10px;
     }
+    #menu.open::before {
+        content: "X";
+        padding: 20px 10px;
+      }
     .navigation a {
         display: block;
         width: 30%;
@@ -28,8 +33,10 @@
     .navigation {
         width: 100%;
         background-color: #000000;
-        text-align: center;
         display: none;
+        padding: 10px;
+        text-align: center;
+
     }
     .hero {
         width: 100%;
@@ -56,5 +63,19 @@
     }
     #btnAction {
         z-index: -1;
+    }
+}
+@media (max-width: 400px) {
+    #message-hero {
+        top: 8rem;
+        width: 80%;
+        left: 10%;
+    }
+    #scooter-photo {
+        width: 90%;
+        display: block;
+        top: 26rem;
+        left: 5%;
+        z-index: 0;
     }
 }
