@@ -95,4 +95,24 @@ a.current:link, a.current:visited {
     object-fit: contain;
     background-color: #ffde20;
 }
+#rental-type {
+    width: 100%;
+    text-align: center;
+}
+#rental-info {
+    background-color: #fcd600;
+    display: flex;
+    justify-content: space-around;
+    padding: 25px;
+}
+#rental-type div img{
+    object-fit: cover;
+    height: 250px;
+}
+#rental-info div p{
+    background: rgba(255, 255, 255, 0.45);
+    padding: 20px;
+    border-radius: 25px;
+    line-height: 1.5;
+}
 
