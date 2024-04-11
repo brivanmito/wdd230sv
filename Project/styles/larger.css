@@ -144,3 +144,20 @@ section {
     color:#ffffff ;
     font-size: 20px;
 }
+footer p {
+    color: white;
+}
+footer {
+    width: 100%;
+    background-color: black;
+    padding: 20px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer div img{
+    height: 50px;
+    object-fit: contain;
+    border-radius: 15px;
+}
