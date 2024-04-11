@@ -100,7 +100,6 @@ a.current:link, a.current:visited {
     text-align: center;
 }
 #rental-info {
-    background-color: #fcd600;
     display: flex;
     justify-content: space-around;
     padding: 25px;
@@ -110,9 +109,38 @@ a.current:link, a.current:visited {
     height: 250px;
 }
 #rental-info div p{
-    background: rgba(255, 255, 255, 0.45);
+    background: rgba(255, 240, 32, 0.45);
     padding: 20px;
     border-radius: 25px;
     line-height: 1.5;
+    margin: 10px;
 }
-
+h2{
+    padding: 20px;
+}
+h3{
+    padding: 20px;
+}
+section {
+    text-align: center;
+}
+#icon-weather {
+    width: 100px;
+    object-fit: cover;
+}
+#weather-card {
+    background: rgba(5, 45, 104, 0.75);
+    width: 18%;
+    padding: 20px;
+    border-radius: 30px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+#weather-card p:nth-child(2){
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+}
+#weather-card p{
+    color:#ffffff ;
+    font-size: 20px;
+}

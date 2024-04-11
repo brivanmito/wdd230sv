@@ -64,6 +64,9 @@
     #btnAction {
         z-index: -1;
     }
+    #rental-info {
+        display: block;
+    }
 }
 @media (max-width: 400px) {
     #message-hero {
